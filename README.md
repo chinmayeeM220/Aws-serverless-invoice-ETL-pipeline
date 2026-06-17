@@ -53,3 +53,4 @@ Data moves dynamically across isolated processing components to maintain separat
        ↓
 [6. PROCESSING STAGE 2] --> 'AWS Lambda 2' spins up 'AWS Glue Job 2' (PySpark Columnar Transformation)
        ↓
+[7. FINAL STORAGE]      --> High-performance, Snappy-compressed Parquet warehouse in 'sqs-itw-parquet-bucket'
