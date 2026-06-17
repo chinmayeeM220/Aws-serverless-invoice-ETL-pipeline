@@ -41,16 +41,16 @@ Click the link below to watch a 2-minute live execution and complete architectur
 Data moves dynamically across isolated processing components to maintain separation of concerns:
 
 ```text
-[1. INGESTION]          --> PDFs arrive via Email & drop into 'sqs-itw-input-bucket1'
+[1. INGESTION]          --> PDFs arrive via Email & drop into 'invoice-input-bucket'
        ↓
 [2. EVENT QUEUING]      --> S3 Event Notification triggers 'Amazon SQS Queue' (Decoupling Layer)
        ↓
 [3. PROCESSING STAGE 1] --> 'AWS Lambda 1' wakes up and triggers 'AWS Glue Job 1' (Validation & Cleaning)
        ↓
-[4. INTERMEDIATE STRG]  --> Cleaned & Validated JSON metadata is saved to 'sqs-itw-output-bucket2'
+[4. INTERMEDIATE STRG]  --> Cleaned & Validated JSON metadata is saved to 'invoice-output-bucket'
        ↓
 [5. ORCHESTRATION]      --> 'Amazon EventBridge' catches the "Glue 1 SUCCESS" state and fires 'AWS Lambda 2'
        ↓
 [6. PROCESSING STAGE 2] --> 'AWS Lambda 2' spins up 'AWS Glue Job 2' (PySpark Columnar Transformation)
        ↓
-[7. FINAL STORAGE]      --> High-performance, Snappy-compressed Parquet warehouse in 'sqs-itw-parquet-bucket'
+[7. FINAL STORAGE]      --> High-performance, Snappy-compressed Parquet warehouse in 'invoice-parquet-bucket'
