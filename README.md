@@ -3,7 +3,7 @@
 ### *Serverless • Event-Driven • AWS Native*
 
 <p align="center">
-  <img src="./architecture.jpeg" alt="Architecture Diagram" width="900"/>
+  <img src="./WhatsApp Image 2026-06-17 at 17.40.21.jpeg" alt="Architecture Diagram" width="900"/>
 </p>
 
 <p align="center">
