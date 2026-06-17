@@ -1,0 +1,30 @@
+2026-06-17T14:58:57.443+05:30
+INIT_START Runtime Version: python:3.14.v43 Runtime Version ARN: arn:aws:lambda:ap-south-1::runtime:28933846e9c8fabbfc0f38cf337c13c4e46a0f226f1ff0559d98c271ed4b22d8
+
+2026-06-17T14:58:58.194+05:30
+START RequestId: f58be7f9-d133-50ae-a5a9-8555ba2b301b Version: $LATEST
+
+2026-06-17T14:58:58.195+05:30
+Lambda 1 function has been triggered via SQS queue::::
+
+2026-06-17T14:58:58.195+05:30
+{
+    "Records": [
+        {
+            "messageId": "8779a666-60ed-46c5-8c52-0079607d01b6",
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"ap-south-1\",\"eventTime\":\"2026-06-17T09:28:56.987Z\",\"eventName\":\"ObjectCreated:Put\",\"s3\":{\"bucket\":{\"name\":\"invoice-pipe-input-bucket\",\"arn\":\"arn:aws:s3:::invoice-pipe-input-bucket\"},\"object\":{\"key\":\"test_invoice.pdf\",\"size\":11775}}}]}",
+            "eventSource": "aws:sqs",
+            "eventSourceARN": "arn:aws:sqs:ap-south-1:<AWS_ACCOUNT_ID>:invoice-queue",
+            "awsRegion": "ap-south-1"
+        }
+    ]
+}
+
+2026-06-17T14:58:58.195+05:30
+The input invoice file received is: test_invoice.pdf
+
+2026-06-17T14:58:58.573+05:30
+END RequestId: f58be7f9-d133-50ae-a5a9-8555ba2b301b
+
+2026-06-17T14:58:58.573+05:30
+REPORT RequestId: f58be7f9-d133-50ae-a5a9-8555ba2b301b Duration: 378.15 ms Billed Duration: 1127 ms Memory Size: 128 MB Max Memory Used: 96 MB Init Duration: 748.73 ms

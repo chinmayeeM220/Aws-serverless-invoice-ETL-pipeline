@@ -1,0 +1,17 @@
+2026-06-17T15:00:56.107+05:30
+INIT_START Runtime Version: python:3.14.v43 Runtime Version ARN: arn:aws:lambda:ap-south-1::runtime:28933846e9c8fabbfc0f38cf337c13c4e46a0f226f1ff0559d98c271ed4b22d8
+
+2026-06-17T15:00:56.475+05:30
+START RequestId: 3a32660c-3c33-4de6-9a34-0d383f40acbf Version: $LATEST
+
+2026-06-17T15:00:58.770+05:30
+Initiating execution for data transformation stage: Invoice_Glue_Job_2_Parquet
+
+2026-06-17T15:00:59.137+05:30
+Glue job successfully invoked. Allocation Execution ID: jr_97e62802ee9f45f463b3e7671d52881c31c9b193865287bcc5d23df8bd066d93
+
+2026-06-17T15:00:59.170+05:30
+END RequestId: 3a32660c-3c33-4de6-9a34-0d383f40acbf
+
+2026-06-17T15:00:59.170+05:30
+REPORT RequestId: 3a32660c-3c33-4de6-9a34-0d383f40acbf Duration: 2694.67 ms Billed Duration: 3059 ms Memory Size: 128 MB Max Memory Used: 97 MB Init Duration: 363.67 ms

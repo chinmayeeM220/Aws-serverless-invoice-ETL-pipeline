@@ -1,0 +1,8 @@
+2026-06-17T13:57:12.133+05:30
+ERROR GlueExceptionAnalysisListener: [Glue Exception Analysis] {
+    "Event": "GlueETLJobExceptionEvent",
+    "Timestamp": 1781684832026,
+    "Failure Reason": "Traceback (most recent call last):\n  File \"/tmp/Invoice_Glue_Job_2_Parquet.py\", line 83, in <module>\n    main()\n  File \"/tmp/Invoice_Glue_Job_2_Parquet.py\", line 39, in main\n    if raw_df.rdd.isEmpty():\nAnalysisException: Since Spark 2.3, the queries from raw JSON/CSV files are disallowed when the referenced columns only include the internal corrupt record column (named _corrupt_record by default).",
+    "Last Executed Line number": 83,
+    "script": "Invoice_Glue_Job_2_Parquet.py"
+}
